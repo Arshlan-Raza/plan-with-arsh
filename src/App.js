@@ -15,14 +15,14 @@ const App = () => {
     return (
       <div className="refresh">
         <h2>No Tours Left</h2>
-        <button onClick={() =>setTours(data)}>Refresh</button>
+        <button onClick={() =>setTours(data)} className="btn-white">Refresh</button>
       </div>
     );
   }
 
   return (
-    <div>
-      <Tours tours = {tours} removeTour = {removeTour} ></Tours>
+    <div className="App">
+      <Tours  tours = {tours} removeTour = {removeTour} ></Tours>
     </div>
   );
 };
